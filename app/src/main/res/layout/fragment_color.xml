@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.connectionservice.ColorFragment"
+    android:background="#EFE8E0">
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/black_light"
+        android:text="Zielony"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintStart_toEndOf="@+id/redButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/orangeButton"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black_light"
+        android:text="Pomarańczowy"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/violetButton" />
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/black_light"
+        android:text="Czerwony"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/violetButton"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black_light"
+        android:text="Fioletowy"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redButton" />
+
+    <Button
+        android:background="@color/black_light"
+        android:textColor="@color/yellow_light"
+        android:id="@+id/pinkButton"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Różowy"
+        app:layout_constraintStart_toEndOf="@+id/orangeButton"
+        app:layout_constraintTop_toBottomOf="@+id/whiteButton" />
+
+    <Button
+        android:id="@+id/whiteButton"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black_light"
+        android:text="Biały"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintStart_toEndOf="@+id/violetButton"
+        app:layout_constraintTop_toBottomOf="@+id/greenButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="346dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/black_dark"
+        android:gravity="center"
+        android:text="Wybierz kolor!"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_light"
+
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

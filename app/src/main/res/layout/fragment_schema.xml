@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Schema.SchemaFragment"
+    android:background="#EFE8E0">
+
+    <TextView
+        android:id="@+id/schemaButton"
+        android:layout_width="346dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black_dark"
+        android:gravity="center"
+        android:text="Wybierz schemat!"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_light"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:background="@color/black_light"
+        android:textColor="@color/yellow_light"
+        android:id="@+id/firstButton"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="70dp"
+        android:text="Cylon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schemaButton" />
+
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/black_light"
+        android:text="Demo"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toEndOf="@+id/firstButton"
+        app:layout_constraintTop_toBottomOf="@+id/schemaButton" />
+
+    <Button
+        android:id="@+id/fourthButton"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black_light"
+        android:text="Rell"
+        android:textColor="@color/yellow_light"
+        app:layout_constraintStart_toEndOf="@+id/thirdButton"
+        app:layout_constraintTop_toBottomOf="@+id/secondButton" />
+
+    <Button
+        android:background="@color/black_light"
+        android:textColor="@color/yellow_light"
+        android:id="@+id/thirdButton"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:text="Paleta \nkolorów"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

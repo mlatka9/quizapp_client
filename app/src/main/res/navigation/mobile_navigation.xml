@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ble.ui.home.HomeFragment"
+        android:label="Strona Główna"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.ble.ui.btconnection.BTConnectionFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_bluetooth" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.ble.ui.connectionservice.ColorFragment"
+        android:label="Color"
+        tools:layout="@layout/fragment_color">
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/schemaFragment2"
+        android:name="com.example.ble.ui.Schema.SchemaFragment"
+        android:label="Schemat"
+        tools:layout="@layout/fragment_schema">
+        <action
+            android:id="@+id/action_schemaFragment2_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.ble.ui.quiz.CategoryFragment"
+        android:label="Kategoria"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.ble.ui.quiz.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_quizFragment_to_quizResultFragment"
+            app:destination="@id/quizResultFragment" />
+        <action
+            android:id="@+id/action_quizFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizResultFragment"
+        android:name="com.example.ble.ui.quiz.QuizResultFragment"
+        android:label="Rezultat"
+        tools:layout="@layout/fragment_quiz_result">
+        <action
+            android:id="@+id/action_quizResultFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_quizResultFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+</navigation>
